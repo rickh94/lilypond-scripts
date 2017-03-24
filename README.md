@@ -26,6 +26,6 @@ Uses `rm` so it is NOT reversible.
 `lylog` - runs lilypond over a file but stdout/stderr is redirected
 into *filename*.log.
 
-`collapsed\_path` - produces a fish like collapsed path for
+`collapsed_path` - produces a fish like collapsed path for
 tabbing in zsh. I use it in my prompt. Copied from a zsh mailing list
 archive. Originally by Daniel Friesel, see header for details.
