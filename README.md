@@ -14,7 +14,7 @@ if not otherwise specified.
 
 **lymakeinclude** - creates lilypond include file from foler of
 .ly and .ily files. Places this file one directory higher 
-named in the format *current_working_directory*\_include.ily.
+named in the format *current-working-directory*\_include.ily.
 
 **lyclean** - cleans up after vim, lilypond, sed, and other tools
 used in my lilypond workflow.
