@@ -1,0 +1,4 @@
+#!/bin/bash
+
+mkdir ../output
+find . -name '*.ly' | parallel 'lilypond -dpaper-size=\"letter\" -o../output/'

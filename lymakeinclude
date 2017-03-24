@@ -1,0 +1,25 @@
+#!/bin/bash
+
+rm -f files.tmp music.ily
+dir=$(basename "$PWD")
+# echo $dir
+append="_include.ily"
+fileName=$dir$append
+touch $fileName
+echo '\version "2.18.2"' > $fileName
+echo '' >> $fileName
+echo "#(ly:set-option 'relative-includes #t)" >> $fileName
+# less music.ily
+find *.ly *.ily ! -name $fileName | xargs ls -1 >> files.tmp
+# less files.tmp
+replaceA='\\include "'
+replaceB='/'
+sed -i2 -e 's,'^','"$replaceA$dir$replaceB"',' files.tmp 
+rm -f files.tmp2
+# less files.tmp
+sed -i2 -e 's/$/"/' files.tmp
+rm -f files.tmp2
+cat files.tmp >> $fileName
+rm files.tmp
+mv $fileName ..
+
