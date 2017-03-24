@@ -2,7 +2,7 @@
 This is my bin folder. Having to edit scripts in 
 my personal bin folder over and over is super annoying
 so git and bitbucket should be good for keeping it
-up-to-date. 
+up-to-date. Clone into ~/bin and keep that synced with remote.
 Maybe I'll move it to GitHub at some time.
 
 ###Current Script List
