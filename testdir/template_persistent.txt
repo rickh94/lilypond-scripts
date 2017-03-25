@@ -1,5 +1,10 @@
-I WAS READ! YAY
+\version "2.18.2"
+\language "english"
+\include "test.ily"
 
+violinNUMMov = \relative P {
+  \clef treble
+  \key g \major
 
-some bullshit down here to test it got all the lines
-REPLACEME
+  \bar "|."
+}
