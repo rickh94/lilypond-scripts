@@ -65,28 +65,13 @@ while i <= file_count do
 	file_name = filename_prefix + "_" + i.to_s + ".ily"
 	new_part = File.new(file_name, "w")
 	new_part.puts this_template
-	puts new_part
 	new_part.close
 	i+=1
 end
+
+puts "\nRemember to check for errors then you probably want to delete template.tmp\n\n"
 	
-#   TODO: also spit out files for review. 
-#   		Q: does ruby have a pager?
-#   		Q: can I use `less` while the script is still running?
-#   TODO: delete template.tmp if all is well
-#
-#
-#  GUIDELINES FOR TEMPLATE.TMP
-#	Should include everything common to all movements:
-#	version, language, includes, etc.
-#	vairables containing music should be in the form:
-#	[piece]partNUMMov or [piece]partMNUM.
-#	'NUM' will be replaced by the word for the movement number.
-#
-#
-#
 #   Possible Features:
 #   non-interactive mode
-#   rescue missing template.tmp
 #   possibly allow user to 
 #   create based on directory name instead of input
