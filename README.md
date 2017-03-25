@@ -26,9 +26,11 @@ Uses `rm` so it is NOT reversible.
 `lylog` - runs lilypond over a file but stdout/stderr is redirected
 into *filename*.log.
 
+`lymakeparts` - Create lilypond part notes files 
+based on a template.tmp file in same directory.
+Written in **ruby**.
+
 `collapsed_path` - produces a fish like collapsed path for
 tabbing in zsh. I use it in my prompt. Copied from a zsh mailing list
 archive. Originally by Daniel Friesel, see header for details.
 
-`part_template` - Create lilypond part notes files 
-based on a template.tmp file in same directory.
