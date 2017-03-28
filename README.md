@@ -1,7 +1,7 @@
-#Some useful scripts for use with lilypond
+# Some useful scripts for use with lilypond
 These are some scripts I use when working with lilypond files in vim.
 
-###Current Script List
+### Current Script List
 `finalLy` - produces pdfs/midis from folder of lys in 'output'
 directory one level higher
 
