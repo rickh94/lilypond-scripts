@@ -1,9 +1,5 @@
-#Rick's usefuls scripts for every computer
-This is my bin folder. Having to edit scripts in 
-my personal bin folder over and over is super annoying
-so git and bitbucket should be good for keeping it
-up-to-date. Clone into ~/bin and keep that synced with remote.
-Maybe I'll move it to GitHub at some time.
+#Some useful scripts for use with lilypond
+These are some scripts I use when working with lilypond files in vim.
 
 ###Current Script List
 `finalLy` - produces pdfs/midis from folder of lys in 'output'
@@ -29,8 +25,3 @@ into *filename*.log.
 `lymakeparts` - Create lilypond part notes files 
 based on a template.tmp file in same directory.
 Written in **ruby**.
-
-`collapsed_path` - produces a fish like collapsed path for
-tabbing in zsh. I use it in my prompt. Copied from a zsh mailing list
-archive. Originally by Daniel Friesel, see header for details.
-
