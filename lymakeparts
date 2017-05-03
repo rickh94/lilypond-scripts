@@ -61,7 +61,7 @@ end
 #  Write files and substitute number.
 i = 1
 while i <= file_count do
-  this_template = template.gsub(/NUM/, number_to_ord(i))
+  this_template = template.gsub(/NUM/, number_to_ord(i).downcase)
   file_name = filename_prefix + "_" + i.to_s + ".ily"
   new_part = File.new(file_name, "w")
   new_part.puts this_template
